@@ -1,12 +1,15 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#DDCB9B;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(77, 15, 15);
+    
 }
 
 li, a, button{
@@ -19,7 +22,55 @@ li, a, button{
 
 header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    background-color: #991F00;
+    padding: 10px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.conteudo{
+    padding: 130px 55px 100px 56px;
+    
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block; /* deixa na mesma linha */
+    padding: 10px 20px;
+    
+}
+
+.navlinks li a {
+    transition: all 0.3 ease 0s;
+    padding: 10px;
+}
+
+.navlinks li a:hover {
+    color:  rgb(255, 255, 255);
+}
+
+button{
+    padding: 9px 25px;
+    background-color: #D44D13;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    border-radius: 19px;
+}
+
+button:hover{
+    background-color:#BF2C08;
 }
